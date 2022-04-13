@@ -1,4 +1,6 @@
 import React from "react";
 import "./styles.css";
 
-export default function Dictionary() {}
+export default function Dictionary() {
+  return <div></div>;
+}
