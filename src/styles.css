@@ -2,3 +2,17 @@ footer {
   text-align: center;
   margin: 1%;
 }
+
+h3 {
+  font-size: medium;
+}
+
+.exampleSentence {
+  font-style: italic;
+  display: block;
+  margin: 1.5%;
+}
+
+.container {
+  margin: 1.5%;
+}
