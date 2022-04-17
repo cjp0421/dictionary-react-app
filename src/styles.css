@@ -1,3 +1,7 @@
+* {
+  box-sizing: content-box;
+}
+
 footer {
   text-align: center;
   margin: 1%;
@@ -15,4 +19,12 @@ h3 {
 
 .container {
   margin: 1.5%;
+}
+
+.Results {
+  border: 1px solid;
+  height: 700px;
+  overflow: scroll;
+  padding: 1.5%;
+  margin: 1% auto;
 }
