@@ -1,6 +1,6 @@
 import React from "react";
-import Meaning from "./Meaning";
 
 export default function Phonetics(props) {
-  return "Jello from Phonetics";
+  console.log(props.phonetic);
+  return <div>"Jello from Phonetics"</div>;
 }
