@@ -5,15 +5,19 @@ import "./styles.css";
 
 export default function Results(props) {
   console.log(props.results);
+
   if (props.results) {
     return (
       <div className="Results">
-        <br />
-        <Phonetics phonetic={props.results.phonetic} />
-        <h2>{props.results[0].word}</h2>
-        <p>{props.results[0].phonetics[0].text}</p>
+        {props.results.phonetics.map(function (phonetic, index) {
+          return (
+            <div key={index}>
+              <Phonetics phonetic={phonetic} />
+            </div>
+          );
+        })}
 
-        {props.results[0].meanings.map(function (meaning, index) {
+        {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
               <Meaning meaning={meaning} />
