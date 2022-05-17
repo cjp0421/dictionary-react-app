@@ -7,8 +7,24 @@ footer {
   margin: 1%;
 }
 
+h1 {
+  padding: 2%;
+}
+
 h3 {
   font-size: medium;
+}
+
+q {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.quotationAuthor {
+  position: relative;
+  display: block;
+  text-align: center;
 }
 
 .exampleSentence {
@@ -18,7 +34,27 @@ h3 {
 }
 
 .container {
-  margin: 1.5%;
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/22/08/01/literature-3033196_960_720.jpg");
+  background-size: cover;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(207, 239, 247, 0.35);
+  z-index: -2;
 }
 
 .Results {
@@ -26,5 +62,88 @@ h3 {
   height: 700px;
   overflow: scroll;
   padding: 1.5%;
-  margin: 1% auto;
+  margin: 1%;
+  display: block;
+  width: 45%;
+  z-index: 1;
+}
+
+.Phonetic section {
+  display: flex;
+}
+
+.phoneticDisplay {
+  font-size: smaller;
+}
+
+.formSection {
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  z-index: 8;
+}
+
+input {
+  text-align: center;
+  background: none;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-color: aliceblue;
+  display: block;
+  margin: 0 auto;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.wordDisplay {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  width: 100%;
+  z-index: 10;
+  display: block;
+  margin: 10 auto;
+}
+
+.wordDisplay:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(219, 244, 250, 0.7);
+  z-index: -2;
+}
+
+.Dictionary:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(219, 244, 250, 0.7);
+  z-index: -2;
+}
+
+.App {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.phoneticLink {
+  display: inline-block;
+  padding-left: 2%;
 }

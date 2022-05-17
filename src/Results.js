@@ -8,11 +8,11 @@ export default function Results(props) {
     console.log(props.results.word);
     return (
       <div className="Results">
-        <h2>{props.results.word}</h2>
-        <div>
+        <h2 className="wordDisplay">{props.results.word}</h2>
+        <div className="phoneticDisplay">
           {props.results.phonetics.map(function (phonetic, index) {
             return (
-              <div key={index}>
+              <div className="phonetic-div" key={index}>
                 <Phonetics phonetic={phonetic} />
               </div>
             );
@@ -21,7 +21,7 @@ export default function Results(props) {
 
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <div className="meaningDisplay" key={index}>
               <Meaning meaning={meaning} />
             </div>
           );
