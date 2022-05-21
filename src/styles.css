@@ -69,6 +69,7 @@ q {
 }
 
 .Phonetic section {
+  position: relative;
   display: flex;
 }
 
@@ -112,7 +113,7 @@ body {
   width: 100%;
   z-index: 10;
   display: block;
-  margin: 10 auto;
+  margin-bottom: 5%;
 }
 
 .wordDisplay:before {
